@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daraab Khan — Web Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Daraab Khan — Web developer and UI/UX designer building high-converting websites and scalable systems.">
+
+  <!-- Google Fonts: Bebas Neue, Inter, & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-content">
+      <div class="loader-spinner-wrapper">
+        <div class="loader-ring"></div>
+        <div class="loader-pulse"></div>
+      </div>
+      <div class="loader-text-group">
+        <span class="loader-title">LOADING PORTFOLIO</span>
+        <span id="loader-percent" class="loader-percent">0%</span>
+      </div>
+      <div class="loader-track">
+        <div id="loader-fill" class="loader-fill"></div>
+      </div>
+      <p class="loader-subtitle">Loading high-resolution 3D frame experience...</p>
+    </div>
+  </div>
+
+  <!-- Background Sticky Canvas Animation -->
+  <div id="canvas-container" class="canvas-container">
+    <div class="canvas-gradient-overlay"></div>
+    <canvas id="frame-canvas"></canvas>
+  </div>
+
+  <!-- Top Floating Navigation Bar -->
+  <header class="navbar-header">
+    <div class="navbar-inner">
+      <nav class="nav-menu-pill">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experiences" class="nav-link">Experiences</a>
+        <a href="DARAAB_KHAN_RESUME26.pdf" target="_blank" class="nav-link">Resume</a>
+      </nav>
+
+      <a href="mailto:khandaraab0920@gmail.com" class="btn-orange">
+        <span>Contact</span>
+        <span class="btn-arrow-circle">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HUD Counter Pills (Top Right) -->
+  <div class="hud-container">
+    <div id="scroll-percent-pill" class="hud-pill scroll-pill">
+      <span id="scroll-percent-text">0%</span>
+    </div>
+  </div>
+
+  <!-- Main Scrollable Content Container -->
+  <main class="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        
+        <!-- Big Hero Title -->
+        <div class="hero-title-wrapper">
+          <h1 class="hero-name">
+            <span class="hero-firstname-group">
+              <span class="hero-greeting">Hi, I am</span>
+              <span class="hero-name-part">DARAAB</span>
+            </span>
+            <span class="hero-name-part">KHAN</span>
+          </h1>
+        </div>
+
+        <!-- Hero Bottom Cards Grid -->
+        <div class="hero-cards-grid">
+          
+          <!-- Left Actions Card -->
+          <div class="hero-card trust-card">
+            <div class="card-actions">
+              <a href="#projects" class="btn-outline">
+                <span>View My Projects</span>
+                <span class="btn-arrow">↘</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right LinkedIn Glass Card -->
+          <a href="https://www.linkedin.com/in/daraab-khan-8a16b7328" target="_blank" rel="noopener noreferrer" id="linkedin-card-link" class="hero-card linkedin-card glass-card">
+            <div class="linkedin-card-inner">
+              <div class="linkedin-icon-box">
+                <svg class="linkedin-svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </div>
+              <div class="linkedin-text-group">
+                <span class="linkedin-title">LinkedIn Profile</span>
+                <span class="linkedin-subtitle">Connect on LinkedIn ↗</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS MARQUEE SECTION -->
+    <div id="skills" class="skills-banner-wrapper">
+      <div class="container">
+        <div class="ticker-header">
+          <span class="section-tag">✦ Skills</span>
+        </div>
+      </div>
+      <section class="ticker-section">
+        <div class="ticker-track">
+        <div class="ticker-content">
+          <span>HTML</span> <span class="ticker-star">✦</span>
+          <span>REACT (BASICS)</span> <span class="ticker-star">✦</span>
+          <span>PYTHON</span> <span class="ticker-star">✦</span>
+          <span>CSS</span> <span class="ticker-star">✦</span>
+          <span>EXCEL</span> <span class="ticker-star">✦</span>
+          <span>GIT & GITHUB</span> <span class="ticker-star">✦</span>
+          <span>POWER BI</span> <span class="ticker-star">✦</span>
+          <span>MS WORD</span> <span class="ticker-star">✦</span>
+          <span>C / C++</span> <span class="ticker-star">✦</span>
+        </div>
+        <div class="ticker-content" aria-hidden="true">
+          <span>HTML</span> <span class="ticker-star">✦</span>
+          <span>REACT (BASICS)</span> <span class="ticker-star">✦</span>
+          <span>PYTHON</span> <span class="ticker-star">✦</span>
+          <span>CSS</span> <span class="ticker-star">✦</span>
+          <span>EXCEL</span> <span class="ticker-star">✦</span>
+          <span>GIT & GITHUB</span> <span class="ticker-star">✦</span>
+          <span>POWER BI</span> <span class="ticker-star">✦</span>
+          <span>MS WORD</span> <span class="ticker-star">✦</span>
+          <span>C / C++</span> <span class="ticker-star">✦</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-label-col">
+            <span class="section-tag">✦ About Me</span>
+          </div>
+          <div class="about-content-col">
+            <h2 class="about-bio">
+              Motivated IT student specializing in data analytics and artificial intelligence. Committed to developing innovative solutions that leverage data-driven insights and AI technologies to enhance decision-making and efficiency. Eager to gain hands-on experience through collaborative projects while advancing skills in Python and data analytics for effective problem-solving in technology-driven environments.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        
+        <div class="section-header-right">
+          <span class="section-tag">✦ Featured Projects</span>
+          <h2 class="section-title">Code. Create. Innovate.</h2>
+        </div>
+
+        <!-- Real Projects Stack Grid -->
+        <div class="real-projects-grid">
+          
+          <!-- Project 1: Personal Portfolio Website -->
+          <article class="real-project-card glass-card">
+            <div class="real-project-media-col">
+              <div class="real-project-image-wrapper">
+                <img src="portfolio.png" alt="Personal Portfolio Website" class="real-project-img" />
+              </div>
+            </div>
+            <div class="real-project-info-col">
+              <div class="real-project-header">
+                <h3 class="real-project-name">Personal Portfolio Website</h3>
+                <div class="real-project-tags">
+                  <span class="tech-pill">React.js</span>
+                  <span class="tech-pill">Tailwind CSS</span>
+                  <span class="tech-pill">Framer Motion</span>
+                </div>
+              </div>
+              <ul class="real-project-bullets">
+                <li>Developed a modern personal portfolio website using React.js and Tailwind CSS.</li>
+                <li>Implemented interactive UI components and smooth animations using Framer Motion.</li>
+                <li>Designed a responsive and scalable interface with a component-based architecture.</li>
+                <li>Integrated sections for projects, skills, and contact to showcase technical work.</li>
+                <li>Built a custom animated background (neural network effect) to enhance user experience.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2: HemoLink -->
+          <article class="real-project-card glass-card">
+            <div class="real-project-media-col">
+              <div class="real-project-image-wrapper">
+                <img src="hemolink.png" alt="HemoLink System" class="real-project-img" />
+              </div>
+            </div>
+            <div class="real-project-info-col">
+              <div class="real-project-header">
+                <h3 class="real-project-name">HemoLink — Blood Bank System</h3>
+                <div class="real-project-tags">
+                  <span class="tech-pill">Full-Stack Web App</span>
+                  <span class="tech-pill">Group Project</span>
+                  <span class="tech-pill">Real-Time Stock</span>
+                </div>
+              </div>
+              <ul class="real-project-bullets">
+                <li>Developed a full-stack web application to manage blood bank operations and donor availability.</li>
+                <li>Built features for emergency blood requests, donor registration, and admin dashboard management.</li>
+                <li>Implemented donor request approval system and real-time blood stock management.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3: MILD - MACHA -->
+          <article class="real-project-card glass-card">
+            <div class="real-project-media-col">
+              <div class="real-project-image-wrapper">
+                <img src="mildmacha.png" alt="MILD MACHA Media Platform" class="real-project-img" />
+              </div>
+            </div>
+            <div class="real-project-info-col">
+              <div class="real-project-header">
+                <h3 class="real-project-name">MILD — MACHA Media Platform</h3>
+                <div class="real-project-tags">
+                  <span class="tech-pill">FastAPI + React</span>
+                  <span class="tech-pill">FFmpeg</span>
+                  <span class="tech-pill">WebSockets</span>
+                </div>
+              </div>
+              <ul class="real-project-bullets">
+                <li>Engineered a real-time broadcast media recording platform with seamless clip creation.</li>
+                <li>Built an interactive timeline editor supporting cue markers and frame previews.</li>
+                <li>Integrated FFmpeg for continuous recording, thumbnail generation, and high-quality exports.</li>
+                <li>Developed a scalable FastAPI + React full-stack architecture with secure authentication.</li>
+                <li>Designed a responsive dashboard with live recording status, logs, and export tracking.</li>
+                <li>Optimized performance using WebSockets, virtualized rendering, and asynchronous background processing.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCES SECTION -->
+    <section id="experiences" class="experiences-section">
+      <div class="container">
+        
+        <div class="section-header-group">
+          <span class="section-tag">✦ Experiences</span>
+          <h2 class="experiences-main-title">Professional Experience & Roles</h2>
+        </div>
+
+        <div class="experiences-grid">
+          
+          <!-- Experience Card 1 -->
+          <div class="experience-card glass-card">
+            <div class="experience-card-header">
+              <div class="experience-company-group">
+                <h3 class="experience-role">Digital Solutions Intern</h3>
+                <span class="experience-company">India TV</span>
+              </div>
+              <div class="experience-meta">
+                <span class="experience-date">06/2026 – 07/2026</span>
+                <span class="experience-location">Noida, India</span>
+              </div>
+            </div>
+            <ul class="experience-list">
+              <li>Assisted in the design and development of responsive web applications using modern web technologies.</li>
+              <li>Supported day-to-day operations and collaborated with professionals on assigned projects.</li>
+              <li>Contributed to project execution while meeting deadlines and quality standards.</li>
+              <li>Developed strong communication, teamwork, and time-management skills in a professional environment.</li>
+              <li>Participated in code reviews, testing, debugging, and Agile development practices.</li>
+            </ul>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div class="experience-card glass-card">
+            <div class="experience-card-header">
+              <div class="experience-company-group">
+                <h3 class="experience-role">Campus Ambassador</h3>
+                <span class="experience-company">eDC IIT Delhi</span>
+              </div>
+              <div class="experience-meta">
+                <span class="experience-date">12/2025 – 02/2026</span>
+                <span class="experience-location">New Delhi, India</span>
+              </div>
+            </div>
+            <ul class="experience-list">
+              <li>Represented eDC IIT Delhi on campus, acting as a bridge between the organization and student community.</li>
+              <li>Promoted flagship events, competitions, and initiatives such as E-Summit, workshops, and startup programs.</li>
+            </ul>
+          </div>
+
+          <!-- Experience Card 3 -->
+          <div class="experience-card glass-card">
+            <div class="experience-card-header">
+              <div class="experience-company-group">
+                <h3 class="experience-role">Student Ambassador</h3>
+                <span class="experience-company">Google Gemini</span>
+              </div>
+              <div class="experience-meta">
+                <span class="experience-date">08/2025 – 12/2025</span>
+                <span class="experience-location">New Delhi, India</span>
+              </div>
+            </div>
+            <ul class="experience-list">
+              <li>Represented Google Gemini on campus, promoting developer technologies and programs among students.</li>
+              <li>Worked with other student ambassadors to plan, organize, and evaluate programming to meet student needs.</li>
+            </ul>
+          </div>
+
+          <!-- Experience Card 4 -->
+          <div class="experience-card glass-card">
+            <div class="experience-card-header">
+              <div class="experience-company-group">
+                <h3 class="experience-role">Student / Event Coordinator</h3>
+                <span class="experience-company">College IT Club</span>
+              </div>
+              <div class="experience-meta">
+                <span class="experience-date">08/2025 – 12/2025</span>
+                <span class="experience-location">New Delhi, India</span>
+              </div>
+            </div>
+            <ul class="experience-list">
+              <li>Contributed as core member of college IT Club, collaborating with team to plan and execute diverse events.</li>
+              <li>Coordinated and managed multiple events, facilitating seamless execution through effective communication and collaboration.</li>
+              <li>Managed technical arrangements, overseeing system setup and providing on-site technical support during events.</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER / CONTACT SECTION -->
+    <footer id="contact" class="footer-section">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-cta-box glass-card">
+            <span class="section-tag">✦ Thank you for visiting</span>
+            <h2 class="footer-title">GREAT MEETING YOU, HAVE A NICE DAY!</h2>
+            <a href="DARAAB_KHAN_RESUME26.pdf" target="_blank" class="btn-orange btn-large">
+              <span>View Resume</span>
+              <span class="btn-arrow-circle">↘</span>
+            </a>
+          </div>
+          <div class="footer-bottom">
+            <span>© 2026 DARAAB KHAN. All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
